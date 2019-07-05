@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="청첩장: 박인재 & 조예영" />
+    <meta property="og:description" content="Save the date" />
+    <meta property="og:image" content="./assets/img/photo/17.jpg" />
+
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!--fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- 네비게이션 -->
+    <nav>
+      <ul class="menus">
+        <div class="nav-menu" id="nav-main">
+          <span class="char">#Wedding</span>
+          <span class="emoji">🎉</span>
+        </div>
+        <div class="nav-menu" id="nav-profile">
+          <span class="char">#Invitation</span>
+          <span class="emoji">👨🏻‍💻❤️👩🏻‍💻</span>
+        </div>
+        <div class="nav-menu" id="nav-photo">
+          <span class="char">#Photo</span>
+          <span class="emoji">📷</span>
+        </div>
+        <div class="nav-menu" id="nav-location">
+          <span class="char">#Location</span>
+          <span class="emoji">🚗</span>
+        </div>
+      </ul>
+      <div class="progress"></div>
+    </nav>
+
+    <div class="content">
+      <!-- 메인 -->
+      <div class="pane main">
+        <span class="anchor" id="main"></span>
+        <!-- 꽃, 이름 -->
+        <div class="flower">
+          <div class="names">
+            <span class="name">박인재</span>
+            <span class="em">&</span>
+            <span class="name">조예영</span>
+          </div>
+        </div>
+
+        <!-- 시간, 웨딩홀 -->
+        <div class="schedule">
+          <span class="date">2019년 9월 7일 오전 11시 30분</span>
+          <span class="address">일산 CN천년웨딩홀 (10층 미엘홀)</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 프로필 -->
+      <div class="pane profile">
+        <span class="anchor" id="profile"></span>
+
+        <h2>Invitation</h2>
+
+        <div class="invitation">
+
+          <b>인</b>생을 함께하고 싶은 여자를 만나서<br/>
+          <b>재</b>미있는 삶의 여행을 떠나보려 합니다.<br/>
+          <b>예</b>쁜마음을 가진 남자를 만나서<br/>
+          <b>영</b>원한 삶의 동반자가 되어주려 합니다.<br/>
+          <br/>
+          '부부'라는 이름으로 새로운 길을 걸어가는<br/>
+          저희 두 사람을 응원하고 축복해주세요.<br/>
+        </div>
+
+        <!-- 프로필 사진 -->
+        <div class="pictures">
+          <div class="seunghyeon">
+            <img src="./assets/img/photo/6.jpg" alt="" />
+          </div>
+          <div class="ring">
+            <img src="./assets/img/wedding-ring.png" alt="" />
+          </div>
+          <div class="ara">
+            <img src="./assets/img/photo/6.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- 소개 -->
+        <div class="introduction">
+          <div class="relationship">
+            <div class="parents">
+              <span class="father">박태천</span>
+              <span class="mother"><span style="font-family:나눔고딕">故</span>서영순</span>
+            </div>
+            <span class="josa">의 장남</span>
+            <span class="child">인재</span>
+          </div>
+
+          <div class="relationship">
+            <div class="parents">
+              <span class="father">조명규</span>
+              <span class="mother">김인현</span>
+            </div>
+            <span class="josa">&nbsp;의 장녀</span>
+            <span class="child">예영</span>
+          </div>
+        </div>
+
+        <!-- 연락 -->
+        <!--
+          <div class="contacts">
+            <div class="contact">
+              <span>신랑에게 연락하기</span>
+              <a class="tel" href="tel:01065563747"></a>
+          </div>
+
+          <div class="contact">
+            <span>신부에게 연락하기</span>
+            <a class="tel" href="tel:01021117556"></a>
+          </div>
+        </div>-->
+      </div>
+
+      <!-- 사진첩 -->
+      <div class="pane photo">
+        <span class="anchor" id="photo"></span>
+
+        <h2>Photo</h2>
+
+        <!-- 갤러리 -->
+        <div class="image-slider">
+          <div class="images"></div>
+        </div>
+        <!-- 모달 -->
+        <div id="modal" class="modal">
+          <div class="dim"></div>
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-image" />
+        </div>
+      </div>
+
+      <!-- 지도 -->
+      <div class="pane location">
+        <span class="anchor" id="location"></span>
+
+        <h2>Location</h2>
+
+        <div id="map"></div>
+
+        <div class="redirect-map">
+          <div class="header">앱에서 열기</div>
+          <div class="link">
+            <a
+              target="_blank"
+              href="navermaps://?menu=location&pinType=place&lat=37.645749&lng=126.785042&title=남정골드프라자"
+            >
+              <img src="./assets/img/map/naver.png" alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="http://map.daum.net/link/map/경기도 고양시 일산동구 중앙로 1080,37.645749,126.785042"
+            >
+              <img src="./assets/img/map/kakao.png" alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="http://m.tmap.co.kr/tmap2/mobile/route.jsp?name=경기도 고양시 일산동구 중앙로 1080&lon=126.785042&lat=37.645749"
+            >
+              <img src="./assets/img/map/tmap.png" alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="comgooglemaps://?q=남정골드프라자&center=37.48696198627081,126.785042"
+            >
+              <img src="./assets/img/map/google.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="location-desc">
+          <div>
+            <div class="header">
+              <span>주소</span>
+            </div>
+            <span class="desc">CN 천년웨딩홀 (구. 천년부페웨딩홀)<br/>경기도 고양시 일산동구 중앙로 1080 (백석동 1288-2) 남정골드프라자</span>
+          </div>
+          <div>
+            <div class="header">
+              <img class="icon" src="./assets/img/bus.png" alt="" />
+              <span>버스</span>
+            </div>
+            <div class="bus">
+              <span class="desc">금촌, 봉일천 방면</span>
+              <div>- 90, 150, 773</div>
+              <span class="desc">교하읍, 운정</span>
+              <div>- 8, 66, 76, 90, 150, 151, 200, 780, 9714</div>
+              <span class="desc">일산구 마을</span>
+              <div>- 082 (구.101), 089 (구.101-1), 003</div>
+              <span class="desc">강남, 양재</span>
+              <div>- 9700, 9711</div>
+              <span class="desc">신촌</span>
+              <div>- 76, 77, 773, 770, 780, 7727</div>
+              <span class="desc">홍대, 합정</span>
+              <div>- 200, 921</div>
+              <span class="desc">서울도심</span>
+              <div>- 1000, 1000-1, 1200, 9706, 9714, 2000 (서울역, 시청, 광화문, 미도파)</div>
+              <span class="desc">인천, 부천</span>
+              <div>- 3000 (인천터미널), 3300 (인천공항), 5000 (부천터미널), 1001 (상동 홈플러스 건너편)</div>
+              <span class="desc">김포, 강화, 송정역</span>
+              <div>- 150, 960, 959 (김포대학)</div>
+            </div>
+          </div>
+          <div>
+            <div class="header">
+              <img class="icon" src="./assets/img/subway.png" alt="" />
+              <span>지하철</span>
+            </div>
+            <span class="desc">3호선 백석역 5번출구 150M직진 (도보5분)</span>
+          </div>
+          <div>
+              <div class="header">
+                <span>※ 주차공간이 협소하오니 가급적 대중교통 이용 부탁드립니다.</span>
+              </div>
+              <span class="desc">홈플러스 고양터미널점 B4층에 주차하신 후 웨딩홀 셔틀차량 이용 부탁드립니다.</span>
+            </div>
+        </div>
+      </div>
+      <div class="pane footer">
+        © 2019 INJAE PAK & YEYOUNG JO
+      </div>
+    </div>
+    <!--script-->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=41edd6c6cb3fd24f57ad354551d1064d"
+    ></script>
+    <script src="smoothScroll.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
