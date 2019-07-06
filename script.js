@@ -109,7 +109,7 @@ window.onload = function() {
    * 지도
    */
   const map = new daum.maps.Map(document.getElementById("map"), {
-    center: new daum.maps.LatLng(37.645749,126.785042),
+    center: new daum.maps.LatLng(37.644296, 126.787617),
     level: 4 //지도의 레벨(확대, 축소 정도)
   });
   map.setZoomable(false);
